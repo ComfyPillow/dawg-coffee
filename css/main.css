@@ -8,6 +8,7 @@ controls the fill color for SVG elements is different from the one that controls
 
 a.navLink:hover, a.navLink:focus {
 	color : #D87E28;
+	text-decoration : none;
 }
 
 body {
@@ -32,13 +33,16 @@ h2 {
 nav {
 	background-color : #181C22;
 	color : white;
-	display : inline;
 	font-size : 16px;
 	left : 0;
 	margin-left : 15px;
 	position: fixed;
 	top : 0;
 	width : 100;
+}
+
+ul {
+	display : inline;
 }
 
 @media screen and (min-width: 768px) {
