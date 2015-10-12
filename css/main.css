@@ -1,1 +1,89 @@
-/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+/* This should also occur for the SVG icon—note the CSS property that 
+controls the fill color for SVG elements is different from the one that controls text color!*/
+
+a.navLink:hover, a.navLink:focus {
+	color : #D87E28;
+}
+
+body {
+	font-family : Lato, Helvetica Neue, Helvetica, sans-serif;
+	font-size : 16px;
+	font-weight : 300;
+	background-color : #E9EAEE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family : Raleway, Helvetica Neue, Helvetica, sans-serif;
+}
+
+h1 {
+	padding-top : 3em;
+}
+
+h2 {
+	font-color : #BC6026;
+}
+
+nav {
+	background-color : #181C22;
+	color : white;
+	display : inline;
+	font-size : 16px;
+	left : 0;
+	margin-left : 15px;
+	position: fixed;
+	top : 0;
+	width : 100;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size : 20px;
+    }
+
+    h1 {
+    	background-image : url("img/background-sm.jpg");
+    	background-repeat : no-repeat;
+    	background-size : cover;
+    	color : white;
+    	min-height: 550px;
+    	text-align : right;
+    }
+
+    h2 {
+    	text-align : center;
+    	padding : 1em;
+    }
+
+    nav {
+    	background-color : rgba(24, 28, 34, 0.8);
+    }
+
+    #motto {
+    	display : block;
+    }
+
+    .navLink {
+	padding-left : 1em;
+	padding-right : 1em;
+	}
+}
+
+#motto {
+	display : none;
+}
+
+.navLink {
+	font-variant : small-caps;
+	padding : .5em;
+	text-decoration : none;
+}
+
+.scale {
+	height : 1em;
+}
