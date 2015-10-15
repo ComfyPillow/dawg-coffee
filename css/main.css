@@ -169,12 +169,18 @@ ul {
     	display : inline;
     }
 
+    /*THe background image margins are adjusted by negative pixels 
+    inorder to properly demonstrate the blur effect - without it, 
+    the image blurs in a white surrounding border and does not 
+    blur the image to cover the whole screen. */
     #header {
     	background-image : url("../img/background-sm.jpg");
     	background-repeat : no-repeat;
     	background-size : cover;
     	color : white;
+    	margin : -10px -10px -10px -10px;
     	min-height: 550px;
+		overflow : hidden;
     	text-align : right;
     }
 
